@@ -1,5 +1,3 @@
-//using System.Collections;
-//using System.Collections.Generic;
 using UnityEngine;
 
 public class CamTrack : MonoBehaviour
@@ -25,7 +23,6 @@ public class CamTrack : MonoBehaviour
             if (lookAtTarget) transform.LookAt(target);
         } else {
             if (!warningAlreadyShown) {
-                Debug.Log("Warning: You should specify a target in the simpleCamFollow script.", gameObject);
                 warningAlreadyShown = true;
             }
         }
